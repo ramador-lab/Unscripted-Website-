@@ -1,0 +1,39 @@
+h1{
+  font-family: Verdana, Geneva, sans-serif; color: White; text-align: center;
+  font-size: 4.0em;
+  background-color: blue;
+}
+body{
+  background: #252626;
+  text-align: justify;
+}
+
+*{
+  margin: 0 auto 0 auto;
+}
+
+#wrap{
+text-align:center;
+
+
+}
+#navbar{ background-color: black;
+  color:White
+  display:inline-block;
+  text-align: center;
+  }
+#navbar ul{
+  padding:0;
+  list-style:none;
+}
+#navbar li{
+  display: inline-block;
+  text-align: center;
+}
+#navbar a{
+  color: White;
+  text-decoration: none;
+  font-size:40px;
+  padding:15px;
+
+  }
