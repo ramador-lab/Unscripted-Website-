@@ -1,0 +1,243 @@
+//Highe Order Functions
+function load()
+{
+  console.log ("Loading");
+  console.log ("Loading");
+}
+// to call function -> load ()
+//to set interval
+setIntereval (load, 1000)// number is set in milliseconds
+//after interval a number is returned
+//Passing a fucntion into another Function
+
+
+//Arrays
+var number = [1,2,3,4,5] ;
+console.log(numbert[0]); //1
+number [1] + "<" + number [2];
+//to reassign values in an array
+number [0] = 9;
+// another way to declare data types
+var x = new int (11);
+//arrays in javascrip can hold any type of data value in one single array
+//to display the length of the array
+number.length;
+//few built in methods into java script
+//Push/pop
+//shift/unshift
+//IndexOf
+//Slice
+number.push(10);
+//to remove the last number of an array and does not need any agruments
+number.pop ();
+//add something to front of an array
+number.unshift (8);
+//remove something form the front of an array and does not any arguments
+number.shift ();
+number .inedexOf (4) //tells you where an elements is located
+var odd = [] = number.slice (0,2,4);
+//two-dimensional array
+//Example
+var numberGroups = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+]
+numberGroups [2][0] //->>result will be 7
+//Array Iteration -> Access Every pirce of an array
+//Simple loop
+for (var i = 0 ; i < colors.length ; i++)
+[
+  console.log(number(i));
+]
+//Javascript provides an easy built way of iterating over an array. For Each
+//For Each
+numbers.forEach (function ())
+{
+//number is a placeholder, call it whatever you want
+console.log("");
+}
+// Can make an alert with the for loop
+// Adding something in the function call will hold all the values of the array as it is looped the array
+  // Practice todo list
+  var todos = ["Build website"];
+
+  var input = prompt("what would you like to do?");
+
+  while (input != "quit")
+  {
+    if(input == "list") {
+      listTodos () ;
+  } else if (input == "new")
+  {
+    var newTodo = prompt("Enter new todo");
+    todos.push(newTodo);
+    console.log("Added todo")
+  }
+  else if (input == "delete")
+  {
+    var deleteTodo = prompt ( "Enter index of todo to delete");
+    //delete any element from any part of the array
+    //use splice
+    todos.splice(index, 1); // number in this operation only referneces the number of items the programmer wants deleted
+    console.log ("Deleted todo")
+  }
+
+    input = prompt ("What would you like to do?");
+  }
+console.log ("OK, YOU QUIT THE APP")
+
+function listTodos()
+{
+  console.log("**********");
+  todos.forEach(function(todo, i){
+  console.log(i + ":" + todo);}
+);
+console.log("**********");
+
+
+}
+// repeat this process for each of the option of the list pass the operation to a function
+//printReverse()
+//Function that takes an array as an argument and prints out the elements in the array in reverse Order
+
+
+function printReverse(arr){
+  for ( var i = arr.length - 1; i >= 0; i--){
+    console.log(arr[i]);
+  }
+}
+
+printReverse([3,6,2,5])
+
+//isUniform
+//a function which takes an array as an argument and returns true if all elements in the array are identical
+function isUniform (arr)
+{
+  var first = arr [0];
+  for (var i = 1 ; i < arr.length;i++){
+      if(arr[i] !== first){
+        return false;
+      }
+  }
+  return true;
+}
+
+//sumArray
+//a function that accepts an array of numbers and returns the sum of al numbers in the array
+function sumArray (arr)
+{
+  var total = arr[0];
+  for (i =0; i < arr.length; i ++)
+  {
+    total += arr[i];
+
+  }
+  return total;
+
+}
+
+//max()
+//a function that accepts an array of numberes and returns the maximum number in the array
+function max (arr)
+{
+  var max = arr.[0];
+  for (i =0; i < arr.length; i ++)
+  {
+    if (arr[i] > max)
+    {
+      max = arr[i]
+    }
+  }
+  return max;
+}
+
+// Javascript objects
+// A way to store in key-value pairs
+// Objects have no order. Use slots
+// In terms if memeory management objects use slots
+// retrieving data-> utilize bracket or dot notation
+// Example
+var person = {
+  name: "Travis",
+  age: 21,
+  city: "Los Angeles"
+};
+
+//bracket notation
+console.log(person["name"]);
+
+//dot notation
+console.log(person.name);
+console.log(person.city);
+
+
+//differences between notations
+// Can not use dot notation if item starts with a number
+//you can lookup using a variable with bracket notation
+// you can not use dot notation for property name with spaces
+//just use bracket notation- less amount of regulations
+
+
+//Updating data inside of an objecet
+
+// to increment or decrement an integer
+person ["age"] += 1;
+//to reassign value or string
+peerson.city = "London";
+
+// Methods of initializing objects
+// Make an empty object and then add to it
+var person {}
+person.name = "Travis";
+person.age = 21;
+person.city "Los Angeles";
+
+// all at once
+var person = {
+  name: "Travis",
+  age: 21,
+  city: "Los Angeles"
+};
+
+// using the object property
+var person = new object ();
+person.name = "Travis";
+person.age = 21;
+person.city = "Los Angeles";
+
+// An object can hold any type of data
+ var junkobject = {
+age: 57,
+color: "purple",
+isHungry: true,
+friends: ["Horatio", "Hamlet"],
+pet : {
+name: "Rusty",
+speciesL "Dog",
+age: 2
+
+}
+
+//An object can hold another series of data within the object
+
+
+
+//nested objects and Arrays
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
